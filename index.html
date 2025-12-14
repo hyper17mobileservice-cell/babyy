@@ -37,6 +37,17 @@
       margin-top: 15px;
     }
 
+    /* Style for the new large closing message */
+    .big-message {
+      font-size: 2.5rem; /* Make it significantly larger than the 1.3rem paragraphs */
+      font-weight: bold;
+      color: #ff0066; /* Give it a slightly deeper pink for emphasis */
+      margin-top: 50px; /* Add extra space above it */
+      margin-bottom: 50px;
+      animation: pulsate 1.5s infinite alternate; /* Add a subtle pulsing effect */
+      padding: 0 10px; /* Prevent text from hitting the edge on small screens */
+    }
+
     /* Floating hearts */
     .heart {
       position: fixed;
@@ -56,6 +67,12 @@
       0% { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
     }
+    
+    /* New keyframe for the pulsating effect */
+    @keyframes pulsate {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(1.05); opacity: 0.95; }
+    }
   </style>
 </head>
 <body>
@@ -68,6 +85,10 @@
   <div class="section">
     <img src="hug.jpeg" alt="Couple Hugging">
     <p>But I will hold you in my heart every minute of every day</p>
+  </div>
+  
+  <div class="big-message">
+    i love you sooo muchhhhh babyyyy
   </div>
 
   <script>
